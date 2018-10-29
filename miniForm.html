@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Javascript</title>
+
+		<script type="text/javascript">
+			function validaDatos(){
+				var n = document.getElementById("nombre").value;
+				var datos = document.getElementById("datos");
+
+				if(n.length < 3){
+					datos.innerHTML = "Nombre inválido, longitud mínima de 3 letras";
+				}
+				else{
+					datos.innerHTML = "Su registro ha sido el correcto :)";
+				}
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<h1>Captura de datos de usuario</h1>
+
+		<label>Nombre</label><input type="text" id="nombre">
+		<button onclick="validaDatos()">Aceptar</button>
+
+		<h3>Status</h3>
+		<div id="datos"></div>
+	</body>
+</hmtl>

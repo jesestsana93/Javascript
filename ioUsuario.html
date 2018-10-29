@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript</title>
+		<meta charset="UTF-8">
+
+		<script type="text/javascript">
+			function lecturaTeclado(){
+				var t = prompt("Ingresa tu nombre", "Nombre");
+				var msj = document.getElementById("mensajes");
+
+				msj.innerHTML = t;
+				return t;
+			}
+
+
+			function muestraAlert(){
+				alert("Ha ocurrido un error en el sistema");
+			}
+
+			function confirma(){
+				var decision = confirm("Esta seguro que desea continuar?");
+				var msj = document.getElementById("mensajes");
+
+				msj.innerHTML = decision;
+
+			}
+		</script>
+	</head>
+
+
+	<body>
+		<h1>Mensajes Recibidos</h1>
+		<div id="mensajes"></div>
+
+		<h1>Lectura de teclado</h1>
+		<button onclick="lecturaTeclado()">Leer</button>
+
+		<h1>Mostrar información al usuario</h1>
+		<button onclick="muestraAlert()">Alert</button>
+
+		<h1>Pantalla de confirmación</h1>
+		<button onclick="confirma()">Confirmar</button>
+	</body>
+</html>

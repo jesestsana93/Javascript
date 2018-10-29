@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Javascript</title>
+
+		<style type="text/css">
+			.rojo{
+				background-color: red;
+				margin: 5px 5px 5px 5px;
+				display: inline-block;
+				height: 100px; width: 100px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			function cambiaColor(div){
+				div.style.backgroundColor = "blue";
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<h1>Da clic en cualquier cuadrado</h1>
+
+		<div class="rojo" onclick="cambiaColor(this)"></div>
+
+		<div class="rojo" onclick="cambiaColor(this)"></div>
+
+		<div class="rojo" onclick="cambiaColor(this)"></div>
+
+	</body>
+
+</html>

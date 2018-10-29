@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+
+		<h1>Validando datos</h1>
+		<p>Por favor, introduzca un numero.</p>
+		<input id="numb" type="text">
+		<button type="button" onclick="myFunction()">Click Me!</button>
+		<p id="demo"></p>
+
+		<script>
+			function myFunction(){
+				//Get the value of input field with id="numb"
+				var val = document.getElementById("numb").value;
+
+				//Get the element with id="demo"
+				var elem = document.getElementById("demo");
+
+				//If value is space or not a number
+				if (val == "" || isNaN(val)){
+    				//Display "Not a Number" in the element
+    				elem.innerHTML = "No es un numero";
+    			}else{
+    				elem.innerHTML = "OK";
+    			}
+
+			}
+		</script>
+
+	</body>
+</html> 

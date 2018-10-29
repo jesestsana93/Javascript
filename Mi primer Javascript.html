@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+		<!-- Con Javascript se puede escribir directamente en la corriente de salida HTML:-->
+		<p>JavaScript puede escribir directamente en la corriente de salida HTML:</p>
+		<script>
+			document.write("<h1>Se trata de un titulo</h1>");
+			document.write("<p>ESte es un parrafo.</p>");
+		</script>
+		<p>Solo se puede utilizar <strong>document.write</strong> en la salida HTML. Si lo usa despues 
+		de que el documento se ha cargado (por ejemplo, en una funcion), se sobrescribe todo el documento.</p>
+
+		<!-- JavaScript puede reaccionar a los eventos: -->
+		<h1>Mi primer JavaScript</h1>
+		<p id="demo">JavaScript puede reaccionar a los eventos. Al igual que el clic de un boton.</p>
+		<script>
+			function myFunction(){
+				document.getElementById("demo").innerHTML="Hola JavaScript!";
+			}
+		</script>
+		<button type="button" onclick="myFunction()">Click Me!</button>
+
+		<br><br><a href="http://www.w3schools.com/html/html_scripts.asp">Visita W3Schools para mas informacion</a>
+
+	</body>
+
+</html> 
